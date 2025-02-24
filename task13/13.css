@@ -1,0 +1,54 @@
+.flexbox {
+    display: flex;
+    flex-direction: row;
+    height: 50px;
+  }
+  
+  .ele1 {
+    background-color: lightpink;
+    width: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .item1 {
+    background-color: black;
+    color: white;
+  }
+  
+  .element {
+    background-color: lightblue;
+    width: 200px;
+  }
+
+
+
+
+  .flexbox2{
+    display: flex;
+    flex-direction: row;
+    height: 50px;
+  }
+  
+  .ele2 {
+    background-color: lightpink;
+    width: 100px;
+  }
+  
+  .ele3{
+    background-color: lightblue;
+    width: 200px;
+  }
+  
+  .row2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+  .item2 {
+    background-color: black;
+    color: white;
+  }
