@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TECHIE REPAIR</title>
+  <link rel="stylesheet" href="day11.css" />
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+    }
+
+    .feed-form {
+      margin-top: 36px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 90%;
+      max-width: 400px;
+      background-color: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      position: relative;
+      border: 1px solid #ccc;
+    }
+
+    .input-group {
+      margin-bottom: 15px;
+      width: 100%;
+    }
+
+    .input {
+      width: 100%;
+      height: 44px;
+      background-color: #f4f4f4;
+      border-radius: 0.5rem;
+      padding: 0 1rem;
+      border: 2px solid transparent;
+      font-size: 1rem;
+      transition: border-color 0.3s cubic-bezier(0.25, 0.01, 0.25, 1),
+        color 0.3s cubic-bezier(0.25, 0.01, 0.25, 1),
+        background 0.2s cubic-bezier(0.25, 0.01, 0.25, 1);
+      color: #4b4b4b;
+    }
+
+    .label {
+      display: block;
+      margin-bottom: 0.3rem;
+      font-size: 0.9rem;
+      font-weight: bold;
+      color: #05060f99;
+      transition: color 0.3s cubic-bezier(0.25, 0.01, 0.25, 1);
+    }
+
+    .input:hover,
+    .input:focus,
+    .input-group:hover .input {
+      outline: none;
+      border-color: #05060f;
+    }
+
+    .input-group:hover .label,
+    .input:focus {
+      color: #05060fc2;
+    }
+
+    .button_submit {
+      width: 100%;
+      height: 48px;
+      font-size: 14px;
+      color: white;
+      background: red;
+      border-radius: 5px;
+      border: none;
+      font-weight: 500;
+      text-transform: uppercase;
+      margin-top: 20px;
+      margin-bottom: 15px;
+      cursor: pointer;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .button_submit:hover {
+      transform: scale(1.009);
+      box-shadow: 0px 0px 3px 0px #212529;
+    }
+
+    .span {
+      text-decoration: none;
+      color: #58bc82;
+      margin-top: 10px;
+      text-align: center;
+      font-size: 0.9rem;
+    }
+
+    .span a {
+      color: #58bc82;
+    }
+
+    input[type="text"],
+    input[type="password"] {
+      width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+    }
+
+    button {
+      --color: #560bad transparent;
+      font-family: inherit;
+      display: inline-block;
+      width: 8em;
+      height: 2.6em;
+      line-height: 2.5em;
+      margin: 10px 0;
+      position: relative;
+      overflow: hidden;
+      border: 2px solid transparent;
+      transition: color 0.5s;
+      z-index: 1;
+      font-size: 17px;
+      border-radius: 6px;
+      font-weight: 500;
+      color: rgb(255, 238, 0);
+      background-color: transparent;
+      cursor: pointer;
+      
+    }
+
+    button:before {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      background: var(--color);
+      height: 150px;
+      width: 200px;
+      border-radius: 50%;
+      border: 2px;
+      top: 100%;
+      left: 100%;
+      transition: all 0.7s;
+    }
+
+    button:hover {
+      color: #ffffff;
+    }
+
+    button:hover:before {
+      top: -30px;
+      left: -30px;
+    }
+
+    button:active:before {
+      background: #3a0ca3 transparent;
+      transition: background 0s;
+    }
+
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 1;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      background-color: rgba(0, 0, 0, 0.4);
+      padding-top: 60px;
+    }
+
+    .modal-content {
+      background-color: #fefefe;
+      margin: 5% auto 15% auto;
+      border: 1px solid #ccc;
+      width: 80%;
+      max-width: 500px;
+      position: relative;
+      border-radius: 5px;
+      padding: 20px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .close {
+      position: absolute;
+      right: 10px;
+      top: 10px;
+      color: #000;
+      font-size: 25px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .close:hover,
+    .close:focus {
+      color: red;
+    }
+
+    .animate {
+      -webkit-animation: animatezoom 0.6s;
+      animation: animatezoom 0.6s;
+    }
+
+    @-webkit-keyframes animatezoom {
+      from {
+        -webkit-transform: scale(0);
+      }
+      to {
+        -webkit-transform: scale(1);
+      }
+    }
+
+    @keyframes animatezoom {
+      from {
+        transform: scale(0);
+      }
+      to {
+        transform: scale(1);
+      }
+    }
+
+    .button-container {
+      text-align: center;
+      margin-top: 50px;
+    }
+
+    .button-container button {
+      margin: 50px;
+      font-size: x-large;
+      color: yellow;
+      }
+
+    @media (max-width: 768px) {
+      .button-container h1 {
+        font-size: 40px;
+      }
+
+      button {
+        width: 100%;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .button-container h1 {
+        font-size: 30px;
+      }
+    }
+
+    .back-video {
+      position: fixed;
+      right: 0;
+      bottom: 0;
+      min-width: 100%;
+      min-height: 100%;
+      z-index: -1;
+    }
+
+    @media (min-aspect-ratio: 16/9) {
+      .back-video {
+        width: 100%;
+        height: auto;
+      }
+    }
+
+    @media (max-aspect-ratio: 16/9) {
+      .back-video {
+        width: auto;
+        height: 100%;
+      }
+    }
+
+    .heading{
+      color: darkorange;
+    }
+    .sub{
+      color: aqua;
+    }
+  </style>
+
+
+</head>
+<body>
+  <header>
+    <video autoplay loop muted playsinline class="back-video">
+      <source src="repair1.mp4" type="video/mp4">
+    </video>
+    <div class="container-fluid">
+      <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+          <ul class="nav navbar-nav">
+            <li><a id="len1" class="hoverable" href="main.html">Home</a></li>
+            <li><a id="len2" class="hoverable" href="contact.html">Contact</a></li>
+            <li><a id="len3" class="hoverable" href="about.html">About</a></li>
+            <li><a id="len4" class="hoverable" href="#">Services</a></li>
+          </ul>
+        </div>
+      </nav>
+      <div id="what-the-hell-is-this">
+        <div class="page-title">
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="button-container">
+    <h1 style="text-align: center; margin: auto; width: 60%; font-size: 60px" class="heading">
+      TECHIE REPAIR
+    </h1>
+    <h4 style="text-align: center; margin-bottom: 10px" class="sub">
+      Welcome to our service portal
+    </h4>
+    <button class="button" onclick="document.getElementById('customerModal').style.display='block'">
+      Customer Login
+    </button>
+    <button class="button" onclick="document.getElementById('technicianModal').style.display='block'">
+      Technician Login
+    </button>
+    <button class="button" onclick="document.getElementById('productSellerModal').style.display='block'">
+      Product Seller Login
+    </button>
+  </div>
+
+  <div class="form-container">
+    <span onclick="document.getElementById('customerModal').style.display='none'" class="close" title="Close Modal">&times;</span>
+    <h2 style="text-align: center; margin-bottom: 20px">
+      Customer Sign In
+    </h2>
+    <form action="/login" method="post">
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="email" placeholder="Enter your email" required autocomplete="off">
+      </div>
+      <div class="form-group">
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="password" required>
+      </div
