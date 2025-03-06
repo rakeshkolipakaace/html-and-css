@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Clone</title>
+    <style>
+        div {
+            border-style: solid;
+            border-color: white;
+        }
+        p {
+            display: inline-block;
+            margin: 0;
+        }
+        button {
+            background-color: rgb(240, 233, 233);
+            border-style: none;
+            cursor: pointer;
+        }
+        .sidebar_and_thumbnails {
+            display: grid;
+            grid-template-columns: 175px auto;
+            column-gap: 50px;
+        }
+        .q_zero {
+            display: grid;
+            grid-template-columns: repeat(3, 280px);
+            grid-template-rows: repeat(2, 250px);
+            gap: 20px;
+            width: 100%;
+            margin-top: 50px;
+        }
+        .q_first {
+            width: 280px;
+            display: grid;
+            grid-template-rows: 150px 100px;
+        }
+        .q_three {
+            display: grid;
+            grid-template-columns: 50px auto 38px;
+        }
+        .q_five {
+            display: grid;
+            grid-template-rows: 55px 20px 20px;
+        }
+        .q_four img {
+            width: 30px;
+            border-radius: 50%;
+            margin: 7px 5px;
+        }
+        .q_seven p {
+            font-size: 14px;
+        }
+        .q_two img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .q_eight p, .q_nine p {
+            color: rgb(182, 165, 165);
+            font-size: 11px;
+        }
+        .q_eight img {
+            width: 10px;
+            border-radius: 50%;
+        }
+        .q_six img {
+            width: 17px;
+            margin-top: 11px;
+        }
+        .w_zero {
+            display: grid;
+            grid-template-rows: repeat(6, 40px) 20px;
+            width: 175px;
+        }
+        .w_first, .w_second, .w_third, .w_fourth {
+            display: grid;
+            grid-template-columns: 50px auto;
+            align-items: center;
+        }
+        .w_first img, .w_second img, .w_third img, .w_fourth img {
+            width: 30px;
+            margin-left: 7px;
+        }
+        .w_second p, .w_third p, .w_fourth p {
+            font-size: 15px;
+            margin-left: 7px;
+        }
+        .header_and_thumbnailpart {
+            display: grid;
+            grid-template-rows: 52px 40px auto;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 5px 20px;
+            width: 900px;
+        }
+        .header1 {
+            display: flex;
+            align-items: center;
+        }
+        .header1 input {
+            font-size: 12px;
+            height: 25px;
+            color: rgb(124, 120, 120);
+            width: 400px;
+            border-radius: 13px 0 0 13px;
+            padding-left: 8px;
+            font-weight: bold;
+            border: 1.5px solid rgb(124, 120, 120);
+        }
+        .header1 img {
+            height: 27px;
+            width: 33px;
+            border-radius: 0 13px 13px 0;
+            border: 1.5px solid rgb(124, 120, 120);
+        }
+        .header2 {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+        }
+        .header2 img {
+            height: 27px;
+            width: 28px;
+            border: none;
+        }
+        .header2 button {
+            border-radius: 18px;
+            width: 80px;
+            height: 28px;
+        }
+        .buttons {
+            display: flex;
+            gap: 20px;
+            overflow-x: auto;
+        }
+        .buttons button {
+            height: 25px;
+            border-radius: 7px;
+            padding: 5px 10px;
+            white-space: nowrap;
+        }
+    </style>
+</head>
+<body>
+    <div class="sidebar_and_thumbnails">
+        <div class="w_zero">
+            <div class="w_first">
+                <img src="three_lines.png" alt="Menu">
+                <img src="youtube_logo.png" alt="YouTube">
+            </div>
+            <div class="w_second">
+                <img src="home_logo.png" alt="Home">
+                <p>Home</p>
+            </div>
+            <div class="w_third">
+                <img src="shorts_logo.png" alt="Shorts">
+                <p>Shorts</p>
+            </div>
+            <div class="w_fourth">
+                <img src="subscription_logo.png" alt="Subscriptions">
+                <p>Subscriptions</p>
+            </div>
+        </div>
+
+        <div class="header_and_thumbnailpart">
+            <div class="header">
+                <div class="header1">
+                    <input type="text" placeholder="Search">
+                    <img src="search_logo.png" alt="Search">
+                </div>
+                <div class="header2">
+                    <img src="mike_logo.png" alt="Mic">
+                    <button>+ Create</button>
+                    <img src="notification_logo.jpeg" alt="Notifications">
+                    <img src="k.png" alt="Profile">
+                </div>
+            </div>
+
+            <div class="buttons">
+                <button>All</button>
+                <button>Movie</button>
+                <button>Podcast</button>
+                <button>HTML</button>
+                <button>Code With Dev</button>
+                <button>Songs</button>
+                <button>Interview</button>
+                <button>Arijit Singh</button>
+                <button>Live</button>
+                <button>Mixes</button>
+                <button>Auditions</button>
+            </div>
+
+            <!-- <div class="q_zero">
+                <div class="q_first">
+                    <div class="q_two">
+                        <img src="1.png" alt="Video 1">
+                    </div>
+                    <div class="q_three">
+                        <div class="q_four">
+                            <img src="sony.jpeg" alt="Sony">
+                        </div>
+                        <div class="q_five">
+                            <p>The caption of the channel and it was in Hindi and English.</p>
+                            <p>Sony LIV <img src="tick.png" alt="Verified"></p>
+                            <p>228K views . 16 hours ago</p>
+                        </div>
+                        
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </div> 
+</body>
+</html>
