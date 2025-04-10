@@ -1,0 +1,80 @@
+<div class="calendar-container">
+                            <div class="calendar">
+                                <div class="calendar-header">
+                                    <div class="month-year">
+                                        <span>March</span>
+                                        <select>
+                                            <option>2023</option>
+                                        </select>
+                                    </div>
+                                    <div>
+                                        <button type="button" class="prev-month">◀</button>
+                                        <button type="button" class="next-month">▶</button>
+                                    </div>
+                                </div>
+                                
+                                <div class="weekdays">
+                                    <div>Sun</div>
+                                    <div>Mon</div>
+                                    <div>Tue</div>
+                                    <div>Wed</div>
+                                    <div>Thu</div>
+                                    <div>Fri</div>
+                                    <div>Sat</div>
+                                </div>
+                                
+                                <div class="days">
+                                    <!-- Calendar days will be generated dynamically -->
+                                    <div class="calendar-day">1</div>
+                                    <div class="calendar-day">2</div>
+                                    <div class="calendar-day">3</div>
+                                    <div class="calendar-day">4</div>
+                                    <div class="calendar-day">5</div>
+                                    <div class="calendar-day">6</div>
+                                    <div class="calendar-day">7</div>
+                                    <div class="calendar-day">8</div>
+                                    <div class="calendar-day">9</div>
+                                    <div class="calendar-day">10</div>
+                                    <div class="calendar-day">11</div>
+                                    <div class="calendar-day">12</div>
+                                    <div class="calendar-day">13</div>
+                                    <div class="calendar-day">14</div>
+                                    <div class="calendar-day">15</div>
+                                    <div class="calendar-day">16</div>
+                                    <div class="calendar-day">17</div>
+                                    <div class="calendar-day">18</div>
+                                    <div class="calendar-day">19</div>
+                                    <div class="calendar-day">20</div>
+                                    <div class="calendar-day">21</div>
+                                    <div class="calendar-day">22</div>
+                                    <div class="calendar-day">23</div>
+                                    <div class="calendar-day">24</div>
+                                    <div class="calendar-day">25</div>
+                                    <div class="calendar-day">26</div>
+                                    <div class="calendar-day selected">27</div>
+                                    <div class="calendar-day">28</div>
+                                    <div class="calendar-day">29</div>
+                                    <div class="calendar-day">30</div>
+                                    <div class="calendar-day">31</div>
+                                </div>
+                            </div>
+
+
+
+
+
+
+
+ <!-- Time slots -->
+ <div class="time-slots1">
+    <div class="time-slot-header">Monday, March 27</div>
+    <div class="time-slot-options">
+        <button type="button" class="time-option">11:30 AM</button>
+        <button type="button" class="time-option">12:30 PM</button>
+        <button type="button" class="time-option">1:30 PM</button>
+        <button type="button" class="time-option">4:30 PM</button>
+        <button type="button" class="time-option">5:30 PM</button>
+        <button type="button" class="time-option">6:30 PM</button>
+    </div>
+</div>
+</div>
