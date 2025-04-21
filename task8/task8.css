@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 input {
     display: block;
     margin-bottom: 5px;
@@ -125,4 +126,133 @@ p {
     font-size: 16px;
     display: inline-block;
     
+=======
+input {
+    display: block;
+    margin-bottom: 5px;
+  }
+
+p {
+    display: inline-block;
+    width: 200px;
+     vertical-align: middle; 
+  }
+
+
+  img {
+    display: block;
+    width: 200px;
+    margin-left: 150px;
+    margin-bottom: 10px;
+  }
+  
+  input {
+    border: none;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 16px;
+    padding-right: 16px;
+    font-size: 16px;
+    width: 500px;
+    border-radius: 30px;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.2);
+  }
+
+
+
+
+  input {
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(200, 200, 200);
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 16px;
+    padding-right: 16px;
+    font-size: 16px;
+    border-radius: 8px;
+    margin-bottom: 12px;
+  }
+  
+  .n1 {
+    width: 148px;
+  }
+  
+  .n2 {
+    width: 148px;
+  }
+  
+  .email {
+    display: block;
+    width: 300px;
+  }
+  
+  button {
+    background-color: rgb(47, 127, 231);
+    color: white;
+    border: none;
+    width: 300px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 8px;
+  }
+
+
+
+
+  p {
+    font-family: Arial;
+  }
+  
+  .title {
+    font-size: 40px;
+    margin-bottom: 25px;
+    display: inline;
+  }
+  
+  input {
+    display: block;
+    background-color: rgb(240, 240, 240);
+    border: none;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 16px;
+    width: 400px;
+  }
+  
+  .destination-textbox {
+    margin-bottom: 35px;
+  }
+  
+  .btn1{
+    background-color: black;
+    color: white;
+    border: none;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 25px;
+    padding-right: 25px;
+    font-size: 16px;
+    margin-right: 20px;
+  }
+  
+  .btn2 {
+    background-color: rgb(240, 240, 240);
+    border: none;
+    margin-top: 10px;
+    color: black;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 25px;
+    padding-right: 25px;
+    font-size: 16px;
+    display: inline-block;
+    
+>>>>>>> 2016757a628f117f90a375fee15538e95c23a337
   }

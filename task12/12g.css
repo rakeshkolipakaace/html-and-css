@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 p {
     font-family: Arial;
     margin-top: 0;
@@ -50,4 +51,58 @@ p {
     padding-right: 15px;
     border-radius: 4px;
     cursor: pointer;
+=======
+p {
+    font-family: Arial;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  
+  .row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .pic {
+    height: 50px;
+    width: 50px;
+    object-fit: cover;
+    border-radius: 25px;
+    margin-right: 15px;
+  }
+  
+  .info {
+    width: 200px;
+  }
+  
+  .name {
+    font-weight: bold;
+    margin-bottom: 3px;
+  }
+  
+  .handle {
+    color: rgb(150, 150, 150);
+    margin-bottom: 5px;
+  }
+  
+  .category {
+    color: rgb(150, 150, 150);
+    font-size: 14px;
+  }
+  
+  .btn {
+    background-color: rgb(29, 155, 240);
+    color: white;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 4px;
+    cursor: pointer;
+>>>>>>> 2016757a628f117f90a375fee15538e95c23a337
   }

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .btn1{background-color: black;
     color: white;
     border-style: solid;
@@ -8,3 +9,15 @@
     opacity:0.8;
 
 }
+=======
+.btn1{background-color: black;
+    color: white;
+    border-style: solid;
+    border-color: black;
+    border-width: 10px;
+}
+.btn1:hover{
+    opacity:0.8;
+
+}
+>>>>>>> 2016757a628f117f90a375fee15538e95c23a337

@@ -1,0 +1,5 @@
+/* Styles for the list items */
+#itemList li {
+    display: inline;
+    margin-right: 10px; /* Optional: adds some space between items */
+}

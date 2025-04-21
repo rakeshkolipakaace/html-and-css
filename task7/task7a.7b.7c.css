@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .pic {
     width: 200px;
     border-radius: 15px;
@@ -18,4 +19,26 @@
     border-radius: 100px;
     object-fit: cover;
     object-position: center;
+=======
+.pic {
+    width: 200px;
+    border-radius: 15px;
+  }
+
+  .pic1 {
+
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    object-position: center;
+  }
+
+
+  .pic2 {
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    object-fit: cover;
+    object-position: center;
+>>>>>>> 2016757a628f117f90a375fee15538e95c23a337
   }

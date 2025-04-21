@@ -1,0 +1,48 @@
+*{
+    font-family: 'Courier New';
+
+}
+h1{
+    color: #1b74e4;
+}
+button{
+    color: darkred;
+  background-color: aqua;
+  
+}
+ 
+.b{
+    background-color: black;
+    color: white;
+}
+button:active{
+    color: pink;
+    background-color: green;
+}
+.b:hover{
+    color:rgb(0, 153, 255);
+    background-color: brown;
+}
+
+::placeholder{
+    color: crimson;
+      
+}
+ input[type="text"]{
+    color: blue;
+    background-color: beige;
+
+ }
+ 
+ #search{
+    background-color: gold;
+ border-color: blueviolet;
+}
+div>label{
+    color:purple;
+}
+
+#search:hover{
+    background-color: white;
+}
+
