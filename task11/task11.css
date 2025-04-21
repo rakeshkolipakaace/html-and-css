@@ -1,0 +1,43 @@
+.grid {
+    display: grid;
+    grid-template-columns: 200px 75px;
+  }
+  
+  .lightblue {
+    background-color: lightblue;
+  }
+  
+  .lightpink {
+    background-color: lightpink;
+  }
+
+
+
+
+  .grid1 {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 50px 1fr 75px;
+  }
+  
+  .lightblue {
+    background-color: lightblue;
+  }
+  
+  .lightpink {
+    background-color: lightpink;
+  }
+
+
+
+
+  .grid2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 20px;
+    row-gap: 10px;
+  }
+  
+  .lightpink {
+    background-color: lightpink;
+  }

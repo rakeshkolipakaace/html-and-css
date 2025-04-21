@@ -1,0 +1,10 @@
+.btn1{background-color: black;
+    color: white;
+    border-style: solid;
+    border-color: black;
+    border-width: 10px;
+}
+.btn1:hover{
+    opacity:0.8;
+
+}
