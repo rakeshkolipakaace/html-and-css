@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 p {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -66,72 +65,3 @@ p {
 .add-friend-button:hover {
     background-color: rgb(20, 105, 215);
 }
-=======
-p {
-    font-family: Arial, sans-serif;
-    margin: 0;
-}
-
-.grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-    justify-content: center;
-    padding: 20px;
-}
-
-.profile {
-    width: 220px;
-    background: white;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    border-radius: 10px;
-    text-align: center;
-    padding: 15px;
-}
-
-.profile-picture {
-    width: 100%;
-    height: 180px;
-    object-fit: cover;
-    border-radius: 10px;
-}
-
-.name {
-    font-size: 18px;
-    font-weight: bold;
-    margin: 10px 0 5px;
-}
-
-.mutual-friends-row {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 8px;
-    margin-bottom: 10px;
-}
-
-.mutual-friend-picture {
-    height: 30px;
-    width: 30px;
-    object-fit: cover;
-    border-radius: 50%;
-}
-
-.mutual-friends {
-    color: rgb(100, 100, 100);
-}
-
-.add-friend-button {
-    background-color: rgb(24, 119, 242);
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 6px;
-    font-size: 16px;
-    cursor: pointer;
-}
-
-.add-friend-button:hover {
-    background-color: rgb(20, 105, 215);
-}
->>>>>>> 2016757a628f117f90a375fee15538e95c23a337
