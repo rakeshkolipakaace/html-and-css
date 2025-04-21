@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 .flexbox {
     display: flex;
     flex-direction: row;
@@ -68,75 +67,4 @@
     background-color: lightpink;
   }
 
-=======
-.flexbox {
-    display: flex;
-    flex-direction: row;
-  }
-  
-  .lightblue {
-    background-color: lightblue;
-    width: 200px;
-  }
-  
-  .lightpink {
-    background-color: lightpink;
-    width: 75px;
-  }
-  
-
-  
-  .flexbox1{
-    display: flex;
-    flex-direction: row;
-  }
-  
-  .lightblue1{
-    background-color: lightblue;
-    width: 50px;
-  }
-  
-  .lightpink1{
-    flex: 1;
-    background-color: lightpink;
-  }
-  
-  
-  .item3 {
-    width: 75px;
-  }
-
-
-
-
-
-  .flexbox3{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-  }
-  
-  .lightpink3{
-    background-color: lightpink;
-  }
-
-
-
-
-  .flexbox4{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    border-width: 1px;
-    border-style: solid;
-    border-color: rgb(150, 150, 150);
-    height: 50px;
-    align-items: center;
-  }
-  
-  .lightpink4{
-    background-color: lightpink;
-  }
-
->>>>>>> 2016757a628f117f90a375fee15538e95c23a337
   
